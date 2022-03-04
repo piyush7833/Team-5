@@ -1,0 +1,76 @@
+.bg2{
+    background-color: rgb(185, 206, 180);
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.eve{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: blanchedalmond;
+    height:auto;
+    display: flex;
+    
+}
+
+.eve1{
+    background-color: blanchedalmond;
+    height:auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2%;
+}
+
+.eve1 img{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.btn2{
+margin-top: 10px;
+border-radius: 20px;
+border-color: black;
+color: wheat;
+background-color: rgb(173, 64, 21);
+cursor: pointer;
+padding: 2%;
+margin-left: 30%;
+/* margin-left: 220px; */
+}
+
+.bg2 h1{
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+    
+@media (max-width: 1000px) {
+    .eve1 img{
+        display: none;
+    }
+    .eve{
+        display: block;
+    }
+    .eve2 img{
+        margin-left: 12%;
+    }
+    .btn2{
+        margin-left: 40%;
+    }
+    .bg2 h2{
+        font-size: medium;
+    }
+    .bg2 h1{
+        color: blue;
+    }
+    
+}

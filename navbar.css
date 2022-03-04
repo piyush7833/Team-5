@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Bree+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 1em;
+}
+#navbar::before{
+    content: "";
+    position:absolute;
+    background: rgb(13, 2, 26);
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+/* liststyling */
+#navbar ul{
+    display: flex;}
+    
+#navbar ul li{
+list-style: none;
+font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 0.6rem 2rem;
+    /* border: 2px solid blue; */
+    /* margin-top: 20rem; */
+    /* margin: 2rem; */
+    text-decoration: none;
+    font-family: 'Baloo Bhaijaan 2',cursive;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: rgb(17, 19, 17);
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 22px;
+}
+/* #navbar ul li a:{
+
+} */
+/* logo and image  */
+#logo{
+    height: 2rem;
+    margin:1em 2em;
+}
+#logo  img{
+    margin: 10px;
+    margin-top: -8px;
+    height: 3rem; 
+    width: 6em;
+}

@@ -1,0 +1,50 @@
+
+
+/* CSS variables */
+:root{
+    --p:blue;
+}
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 2rem;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: red;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 22px;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+}
+.btn a{
+    text-decoration: none;
+    color: white
+}
+.btn a:hover{
+    color:red;
+}
+.btn:hover{
+    background-color: rgb(79, 206, 79);
+    color: rgb(255, 255, 255);
+}
+/* we can give two class to one objet  */
+.centre{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 2rem;
+    font-family: 'Bree Serif', serif;
+    color: rgb(16, 95, 168);
+}
+footer{
+    background-color: black;
+    color: white;
+    /* height: 4vh; */
+    margin-top: 70px;
+}

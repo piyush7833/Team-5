@@ -1,0 +1,97 @@
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Force | Event</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="e2.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="Image/force-logo-0@10000x-8.png" height="70px" width="70px"></div>
+        <input type="checkbox" name="" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Events</li></a>
+            <a href="#"><li>Team</li></a>
+            <a href="#"><li>FeedBack</li></a>
+        </ul>
+     </nav>
+    
+     <div class="bg2">
+        <h1 style="text-align: center;">Ongoing Events</h1><br>
+         <div class="eve">
+              <div class="eve1">
+                <h2>Event Name: SKILLABHYUDAYA (WebDevelopment)</h2>  
+                <div class="date" style="display: flex;">
+                    <h2>Todays Date : </h2>
+                    <h2 id="date">date</h2>
+                  </div>
+                  <h2>Event Date : 17Feb - 5 March</h2>
+                  <img src="img/3.png" height="auto" width="300px">
+                  
+              </div>
+              <div class="eve2" style="margin-top: 1.5%;">
+                  <img src="img/3.png" alt="" height="300px" width="300px">
+                  <button class="btn2">More Info.</button>
+                  <br><br>
+              </div>
+            </div>
+            <div class="bg2">
+                <!-- <h1 style="text-align: center;">Ongoing Events</h1><br> -->
+                 <div class="eve" style="margin-top: 0px;">
+                      <div class="eve1">
+                        <h2>Event Name: SKILLABHYUDAYA (UI/UX Design)</h2>  
+                        <div class="date" style="display: flex;">
+                            <h2>Todays Date : </h2>
+                            <h2 id="date2">date</h2>
+                          </div>
+                          <h2>Event Date : 17Feb - 5 March</h2>
+                          <img src="img/3.png" height="auto" width="300px">
+                          
+                      </div>
+                      <div class="eve2" style="margin-top: 1.5%;">
+                          <img src="img/b.jpg" alt="" height="300px" width="300px">
+                          <button class="btn2">More Info.</button><br><br>
+                      </div>
+                    </div>
+             </div>
+
+
+
+             <div class="bg2" >
+                <h1 style="text-align: center;">Upcoming Events</h1><br>
+                 <div class="eve" >
+                      <div class="eve1">
+                        <h2>Event Name: SKILLABHYUDAYA (Resume Building)</h2>  
+                        <div class="date" style="display: flex;">
+                            <h2>Todays Date : </h2>
+                            <h2 id="date3">date</h2>
+                          </div>
+                          <h2>Announce Soon ...</h2>
+                          <img src="img/3.png" height="auto" width="300px">
+                          
+                      </div>
+                      <div class="eve2" style="margin-top: 1.5%;">
+                          <img src="img/w.jpg" alt="" height="300px" width="300px">
+                          <button class="btn2">More Info.</button><br><br>
+                      </div>
+                    </div>
+                    </div>
+     </div>
+    
+     <script>
+         var today = new Date()
+         var date =today.getDate() + '-' + (today.getMonth()+1)+'-'+ today.getFullYear();
+         document.getElementById("date").innerHTML = date;
+         document.getElementById("date2").innerHTML = date;
+         document.getElementById("date3").innerHTML = date;
+     </script>
+</body>
+</html>

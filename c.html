@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Force-IIITU</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="last.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <nav>
+
+        <div id="logo"><a href="home.html"><img src="img/force.png" height="70px" width="120px"></a></div>
+        <input type="checkbox" name="" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <a href="home.html"><li>Home</li></a>
+            <a href="event.html"><li>Events</li></a>
+            <a href="fame.html"><li>Wall Of Fame</li></a>
+            <a href="team.html"><li>Team</li></a>
+            <a href="contact.html"><li>FeedBack</li></a>
+        </ul>
+     </nav>
+
+    <secton id="contact">
+        <br>
+        <br>
+        <h1 class="h-primary centre">Contact Us</h1>
+        <div class="form" name="google-sheet" id="google-sheet">
+            <label for="Name">Name </label>
+            <input type="text" name="Name" id="Name" placeholder="Enter your name ">
+            <label for="Mobile Number">Mobile Number </label>
+            <input type="number" name="Mobile Number" id="Mobile Number" placeholder="Enter your mobile number ">
+            <label for="Email Id">Email id</label>
+            <input type="email" name="Email Id" id="Email Id" placeholder="Enter your email ">
+            <label for="Address"> Address</label>
+            <input type="text" name="Address" id="Address" placeholder="Enter your address ">
+            <label for="Message/Querry"> Message/Querry</label>
+            <textarea name="Message/Querry" id="Message/Querry" cols="60" rows="4" placeholder="Enter Your message/querry"></textarea>
+            <label for="Photo Of Your Querry">Photo Of your Querry</label>
+            <input type="file" name="Photo Of Your Querry" id="Photo Of Your Querry" placeholder="Insert sphoto of problem you are facing">
+            <!-- <input type="" name="message" id="message" placeholder="Enter your message "> -->
+            <div class="sub">
+            <input type="submit" value="Contact Now" name="submit">
+        </div>
+        </div>
+    </secton>
+        <!-- below navbar -->
+        <hr>
+        <section id="last">
+            <div class="i">
+                <h2>Go To</h2>
+            <ul>
+                <li class="item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="e">
+            <h2>Links</h2>
+            <ul>
+                <!-- # is used when we have to direct within page and we target them by thier id -->
+                <li class="item"><a href="home.html">Home</a></li>
+                <li class="item"><a href="Event.html">Events</a></li>
+                <li class="item"><a href="team.html">Team</a></li>
+                <li class="item"><a href="fame.html">Wall Of Fame</a></li>
+                <li class="item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="f">
+            <h2>Follow Us On</h2>
+            <ul>
+            <li class="item"><a href="https://www.facebook.com/iiituforce/"target= blank><img src="img/F.png" alt="">Facebook</a></li>
+            <li class="item"><a href="https://www.instagram.com/force.iiitu/"target= blank><img src="img/l.png" alt="">Instagram</a></li>
+            <li class="item"><a href="https://in.linkedin.com/company/force-iiitu"target= blank><img src="img/k.png" alt="">LinkedIn</a></li>
+            <!-- <li class="item"><a href=""><img src="img/images.png" alt=""></a></li> -->
+        </ul>
+        </div>
+        </section>
+    <footer class="centre">
+        Copyright &COPY; FORCE all rights reserved
+    </footer>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwRNAIL8olPxn1o_FnatDUhROmYrp3FHBaIqIGA26Cn-_HDNVl6MrIrTiqRoJ2OKcOb6w/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>

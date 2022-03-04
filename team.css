@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Bree+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#team::before{
+    content: "";
+    position:absolute;
+    background:rgb(219, 135, 219);
+    height:1368.8vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.7;
+}
+#team h1::before{
+    content: "";
+    position:absolute;
+    background:url(img/t3.jpg)no-repeat center center/cover;
+    height:50vh;
+    width: 115vw;
+    z-index: -1;
+    opacity: 0.6;
+    margin-top:-15vh ;
+    margin-left:-51vw ;
+}
+#team .box{
+ border: 2px solid rgb(228, 117, 228);
+margin-left: 3vw;
+margin-right:2vw ;
+padding: 1rem;
+border-radius: 28px;
+background-color: rgb(203, 96, 230);
+height: 50vh;
+width: 25vw;
+margin-top: 10vh;
+box-shadow: 2px 5px 5px 5px  rgb(194, 115, 218);
+}
+#team h1{
+    font-size:3.5em;
+    margin-bottom: 15vh;
+}
+#team .box:hover{
+    border-radius:4rem;
+}
+#team{
+    margin-bottom: 16vh;
+}
+#team .box img {
+    height: 30vh;
+    width: 25vw;
+    margin: auto;
+    display: block;
+    border-radius: 28px;
+
+}
+#team h2{
+    margin-top: 8vh;
+    margin-bottom: -7vh;
+}
+#team .box h3{
+    margin: 4vh;
+}
+ #faculty{
+    display: flex;
+    flex-direction: row;
+}
+
+#team #official .box{
+    margin-left:4vw;
+}
+#team #official{
+    display: flex;
+    flex-direction: row;
+}
+
+#team #mentor1{
+    display: flex;
+    flex-direction: row;
+}
+#team #mentor3{
+    display: flex;
+    flex-direction: row;
+}
+#team #mentor2{
+    display: flex;
+    flex-direction: row;
+}
+#team #co1{
+    display: flex;
+    flex-direction: row;
+}
+#team #co2{
+    display: flex;
+    flex-direction: row;
+}
+#team #co3{
+    display: flex;
+    flex-direction: row;
+}
+#team #co4{
+    display: flex;
+    flex-direction: row;
+}
+#team #co5{
+    display: flex;
+    flex-direction: row;
+}
+#team #co6{
+    display: flex;
+    flex-direction: row;
+}
+#team #ex1{
+    display: flex;
+    flex-direction: row;
+}
+#team #ex2{
+    display: flex;
+    flex-direction: row;
+}
+#team #ex3{
+    display: flex;
+    flex-direction: row;
+}
+#team #ex4{
+    display: flex;
+    flex-direction: row;
+}
+#team #ex5{
+    display: flex;
+    flex-direction: row;
+}
+#team #ex6{
+    display: flex;
+    flex-direction: row;
+}
+#team #ex7{
+    display: flex;
+    flex-direction: row;
+}
+footer{
+    margin-top: -2.5vh;
+}
+/* below navbar color */
+#last::before{
+    background:rgb(219, 135, 219);
+}

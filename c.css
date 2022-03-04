@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Bree+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Contact form */
+#contact{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin: 7em; */
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background:url(img/cvcn.gif) no-repeat center center/cover;
+    width: 98.8vw;
+    height: 115vh;
+    z-index: -2;
+    opacity: 0.6;
+    /* margin-top: -10vh; */
+    /* border-radius: 22px; */
+}
+#contact .h-primary{
+    /* color: white; */
+    font-family: 'Bree Serif', serif;
+    margin-top: 6vh;
+}
+#contact label{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+    color: rgb(17, 16, 16);
+    overflow: hidden;
+}
+#contact input{
+    font-size: 1.5rem;
+    display: block;
+    position: relative;
+    width: 30vw;
+    font-family: 'Bree Serif', serif;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    overflow: hidden;
+}
+#contact .sub input{
+    margin-top: 10px;
+    border-radius: 20px;
+    border-color: black;
+    color: wheat;
+    background-color: rgb(173, 64, 21);
+    cursor: pointer;
+    padding: 2%;
+    padding-left:3%;
+    padding-right:3%;
+    font-size:1.5em;
+    width: 10vw;
+}
+#contact .sub input:hover{
+color: white;
+}
+#contact .sub input a{
+    text-decoration: none;
+    color: white
+}
+#contact textarea{
+    font-size: 1.5rem;
+    display: block;
+    position: relative;
+    width: 30vw;
+    font-family: 'Bree Serif', serif;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+}
+
+@media (max-width: 500px){
+    #contact{
+        overflow:scroll;
+    }
+}

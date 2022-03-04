@@ -1,0 +1,30 @@
+/* navigatin */
+#navbar{
+    /* flex-direction: column; */
+}
+/* home */
+#home{
+padding: auto;
+}
+
+#home::before{
+    height:200vh;
+    width: 100vw;}
+
+/* services */
+#Services{
+flex-direction: column;
+}
+#Services.box{
+/* margin-top: 2rem; */
+}
+/* client */
+#client{
+overflow: scroll;
+}
+
+/* contact */
+#contact{
+    overflow: scroll;
+}
+/* footer  */
